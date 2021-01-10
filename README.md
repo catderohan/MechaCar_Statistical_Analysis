@@ -1,7 +1,5 @@
 # MechaCar_Statistical_Analysis
 
-## Purpose
-
 ## Linear Regression to Predict MPG
 For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. The p value was 5.35e-11 which is less than our 0.05 goal and can say that the slope is not 0, so there is correlation. R squared metric is 0.71 which shows 71% accuracy for the model.
 
