@@ -3,22 +3,14 @@
 ## Linear Regression to Predict MPG
 For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. We used the lm() function in R to to perform a linear regression model and then used the summary function to get the p value and R squared value.
 
-
-
 ![](challenge1code.PNG)
 
-
-
-The p value was 5.35e-11 which is less than our 0.05 goal and can say that the slope is not 0, so there is correlation. R squared metric is 0.71 which shows 71% accuracy for the model.
-
-
+The p value was 5.35e-11 which is less than our 0.05 goal. Therefore we can reject the null hypothesis that the slope is 0, and state there is correlation. The squared metric is 0.71 which shows 71% accuracy for the model.
 
 ![](Challenge1.PNG)
 
-
-
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
-The variables/coefficients that were non random are intercept, vechicle length, and ground clearance. These values are all smaller than a 0.05 p value and therefore are unlikely to provide random amounts of variance in the model. Furthermore if the intercept is non random this usually means there are other data metrics and variables that contribte to variance that are not included in this model. 
+The variables/coefficients that were non random are intercept, vechicle length, and ground clearance. These values/coefficients were all smaller than a 0.05 p value and therefore are unlikely to provide random amounts of variance in the model. Furthermore if the intercept is non random this usually means there are other data metrics and variables that contribute to variance that are not included in this model. 
 
 **Is the slope of the linear model considered to be zero? Why or why not?**
 The slope is not 0. The null hypotheses is to assume the slope is 0.  Since our p value is 5.35e-11 which is less than 0.05, we can say this is not statistically significant and reject the null hypothesis that the slope is 0. 
@@ -69,9 +61,9 @@ I'd test the mean cost grouped by model.
 The null hypothesis is that the cost per model is not higher than competitors. The alternative hypothesis is that the cost per model is higher than competitors.
 
 **What statistical test would you use to test the hypothesis? And why?**
-I'd use a paired t test for this test so we could compare two different data sets(Mecha & competitors) between each paired observation (mean cost per model). 
+I'd use a paired t test for this test so we could compare two different data sets(Mecha & competitor) between each paired observation (mean cost per model). 
 
 **What data is needed to run the statistical test?**
-We would need the cost and models from both MechaCar and their competitors. 
+We would need the cost and models from both MechaCar and their competitor. 
 
 Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car led to higher safety ratings. The null hypothesis would be that the slope is 0. We would need the cost and safety rating of each car.
