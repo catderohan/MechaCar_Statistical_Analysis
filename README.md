@@ -4,24 +4,25 @@
 
 ## Linear Regression to Predict MPG
 For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. The p value was 5.35e-11 which is less than our 0.05 goal. R squared metric is 0.71 which shows 71% accuracy for the model.
+
 ![](Challenge1.PNG)
+
 ![](challenge1code.PNG)
 
-Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+**Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
 The variables/coefficients that were non random are intercept, vechicle length, and ground clearance. These values are all smaller than a 0.05 p value and therefore are unlikely to provide random amounts of variance in the model. Furthermore if the intercept is non random this usually means there are other data metrics and variables that contribte to variance that are not included in this model. 
 
-Is the slope of the linear model considered to be zero? Why or why not?
+**Is the slope of the linear model considered to be zero? Why or why not?**
 The slope is not 0. The null hypotheses is to assume the slope is 0.  Since our p value is 5.35e-11 which is less than 0.05, we can say this is not statistically significant and reject the null hypothesis that the slope is 0. 
 
-Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+**Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
 Yes this linear model does predict the mpg of MechaCar prototypes effectively. This model had a R squared score of 0.71 which states 71% accruarcy. 
 
  
 ## Summary Statistics on Suspension Coils
 For the second statistical analysis we transformed the dataset to look at the total summary using the summarize() function to get statistical measurements of the total as well as by Lot. 
 
-First using the summarize function we took the dataframe and the column for PSI to get statistical measures for dataframe including mean, median, variance, and standard deviation. 
-My data came out a bit differently from the example but the class consensus was that the numbers were correct.  Here we can see the mean of the dataframe is 1499 and the variance is 62. 
+First using the summarize function we took the dataframe and the column for PSI to get statistical measures for dataframe including mean, median, variance, and standard deviation. My data came out a bit differently from the example but the class consensus was that the numbers were correct.  Here we can see the mean of the dataframe is 1499 and the variance is 62. 
 
 ![](total_summary.PNG)
 
@@ -39,12 +40,15 @@ For our third statistical analysis we perofrmed t-tests to determine if all manu
 ![](ttest.PNG)
 
 Next we took a look to see if our Lot 1 and our population data are statistically similar using the subset() function in R.  Here the p value = 2.2e-16 which is smaller than our value set at 0.95. We can reject the null hypothesis that there is no statistical difference. Lot 1 and the population data are statistically different.
+
 ![](ttestlot1.PNG)
 
 Then we did the same analysis but with Lot 2. Here the p value was 0.0005911 which is also smaller than our value set at 0.05. This means we reject our null hypothesis that there is no statistical difference. Lot 2 and the population data are statistically different. 
+
 ![](ttestlot2.PNG)
 
 Lastly, we performed the analysis on Lot 3. Here the p value was 0.1589. This is larger than our p-value set at 0.05. This means we can not reject our null hypothesis that it is no statistical difference. Lot 3 and the population data are statistically similar. 
+
 ![](ttestlot3.PNG)
 
 
