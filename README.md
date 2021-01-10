@@ -10,12 +10,15 @@ The p value was 5.35e-11 which is less than our 0.05 goal. Therefore we can reje
 ![](Challenge1.PNG)
 
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
+
 The variables/coefficients that were non random are intercept, vechicle length, and ground clearance. These values/coefficients were all smaller than a 0.05 p value and therefore are unlikely to provide random amounts of variance in the model. Furthermore if the intercept is non random this usually means there are other data metrics and variables that contribute to variance that are not included in this model. 
 
 **Is the slope of the linear model considered to be zero? Why or why not?**
+
 The slope is not 0. The null hypotheses is to assume the slope is 0.  Since our p value is 5.35e-11 which is less than 0.05, we can say this is not statistically significant and reject the null hypothesis that the slope is 0. 
 
 **Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?**
+
 Yes this linear model does predict the mpg of MechaCar prototypes effectively. This model had a R squared score of 0.71 which states 71% accruarcy. 
 
  
