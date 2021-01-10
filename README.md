@@ -32,7 +32,7 @@ Next we wrote an RScript using group_by and summarize() to group each manufactur
 
 The total meeets the design specifications since the total variance is 62 and the limit is 100.  Lots 1 and 2 also both meet this requirement with 0.92 and 7.46 variances which are both below 100. The 3rd lot does not meet design specifications since its variance is 170 which is over 100.
 
-## Deliverable 3
+## T-Tests on Suspension Coils
 For our third statistical analysis we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1500 pounds per square inch. First we used the t.test() function to find out if PSI across all 3 manufacturing lots are statistically different from the population mean of 1500. Here we took a sample of the data to compare. Comparing the mean of the sample data to the mean of the population data we see that the p-value = 0.7007. This is higher than our p value of 0.05.  This means that we can't reject the hypothesis that there is no statistical difference and therfore the sample and population data are statistically similar. 
 
 ![](ttest.PNG)
