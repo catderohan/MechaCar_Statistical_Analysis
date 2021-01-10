@@ -4,8 +4,8 @@
 
 ## Linear Regression to Predict MPG
 For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. The p value was 5.35e-11 which is less than our 0.05 goal. R squared metric is 0.71 which shows 71% accuracy for the model.
-![](Challenge1code.png)
-![](Challenge1code.png)
+![](Challenge1code.PNG)
+![](Challenge1code.PNG)
 
 Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 The variables/coefficients that were non random are intercept, vechicle length, and ground clearance. These values are all smaller than a 0.05 p value and therefore are unlikely to provide random amounts of variance in the model. Furthermore if the intercept is non random this usually means there are other data metrics and variables that contribte to variance that are not included in this model. 
