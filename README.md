@@ -23,11 +23,11 @@ For the second statistical analysis we transformed the dataset to look at the to
 First using the summarize function we took the dataframe and the column for PSI to get statistical measures for dataframe including mean, median, variance, and standard deviation. 
 My data came out a bit differently from the example but the class consensus was that the numbers were correct.  Here we can see the mean of the dataframe is 1499 and the variance is 62. 
 
-![](total_summary.png)
+![](total_summary.PNG)
 
 Next we wrote an RScript using group_by and summarize() to group each manufacturing lot by mean, median, variance, and standard deviation. Here we can the statistical measures by lot. 
 
-![](lot_summary.png)
+![](lot_summary.PNG)
 
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
@@ -36,16 +36,16 @@ The total meeets the design specifications. The total variance is 62 where as we
 ## Deliverable 3
 For our third statistical analysis we perofrmed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1500 pounds per square inch. First we wrote used the t.test() function to find out if PSI across all 3 manufacturing lots are statistically different from the population mean of 1500. Here we took a sample of the data to compare. Comparing the mean of the sample data to the mean of the population data we see that the p-value = 0.7007. This is higher than our p value of 0.05 and means that we can't reject the hypothesis that there is no statistical difference and therfore the sample and data are statistically similar. 
 
-![](ttest.png)
+![](ttest.PNG)
 
 Next we took a look to see if our Lot 1 and our population data are statistically similar using the subset() function in R.  Here the p value = 2.2e-16 which is smaller than our value set at 0.95. We can reject the null hypothesis that there is no statistical difference. Lot 1 and the population data are statistically different.
-![](ttestlot1.png)
+![](ttestlot1.PNG)
 
 Then we did the same analysis but with Lot 2. Here the p value was 0.0005911 which is also smaller than our value set at 0.05. This means we reject our null hypothesis that there is no statistical difference. Lot 2 and the population data are statistically different. 
-![](ttestlot2.png)
+![](ttestlot2.PNG)
 
 Lastly, we performed the analysis on Lot 3. Here the p value was 0.1589. This is larger than our p-value set at 0.05. This means we can not reject our null hypothesis that it is no statistical difference. Lot 3 and the population data are statistically similar. 
-![](ttestlot3.png)
+![](ttestlot3.PNG)
 
 
 ## Study Design: MechaCar vs Competition
