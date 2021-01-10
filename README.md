@@ -55,15 +55,19 @@ Lastly, we performed the analysis on Lot 3. Here the p value was 0.1589. This is
 In this statistical study I would compare costs by model for Mecha vs their larggest competitor to compare how competitive their pricing is to their competitor. 
 
 **What metric or metrics are you going to test?**
+
 I'd test the mean cost grouped by model.
 
 **What is the null hypothesis or alternative hypothesis?**
+
 The null hypothesis is that the cost per model is not higher than competitors. The alternative hypothesis is that the cost per model is higher than competitors.
 
 **What statistical test would you use to test the hypothesis? And why?**
+
 I'd use a paired t test for this test so we could compare two different data sets(Mecha & competitor) between each paired observation (mean cost per model). 
 
 **What data is needed to run the statistical test?**
+
 We would need the cost and models from both MechaCar and their competitor. 
 
 Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car led to higher safety ratings. The null hypothesis would be that the slope is 0. We would need the cost and safety rating of each car.
