@@ -56,15 +56,15 @@ Lastly, we performed the analysis on Lot 3. Here the p value was 0.1589. This is
 
 ## Study Design: MechaCar vs Competition
 
-In this statistical study I would compare costs by model for Mecha vs their larggest competitor to compare how competitive their pricing is to their competitor. 
+In this statistical study I would compare car sale prices by model for Mecha vs their larggest competitor to see how competitive their pricing is to their competitor. 
 
 **What metric or metrics are you going to test?**
 
-I'd test the mean cost grouped by model.
+We would need the mean of cost (sale price) per car model for Mecha and for it's competitor.
 
 **What is the null hypothesis or alternative hypothesis?**
 
-The null hypothesis is that the cost per model is not higher than competitors. The alternative hypothesis is that the cost per model is higher than competitors.
+The null hypothesis is that the cost per car model is not higher than competitors. The alternative hypothesis is that the cost per model is higher than competitors.
 
 **What statistical test would you use to test the hypothesis? And why?**
 
@@ -74,4 +74,4 @@ I'd use a paired t test for this test so we could compare two different data set
 
 We would need the cost and models from both MechaCar and their competitor. 
 
-Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car led to higher safety ratings. The null hypothesis would be that the slope is 0. We would need the cost and safety rating of each car.
+Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car means a higher safety rating. The null hypothesis would be that the slope is 0. We would need the cost and safety rating of each car.
