@@ -3,7 +3,7 @@
 ## Purpose
 
 ## Linear Regression to Predict MPG
-For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. The p value was 5.35e-11 which is less than our 0.05 goal. R squared metric is 0.71 which shows 71% accuracy for the model.
+For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. The p value was 5.35e-11 which is less than our 0.05 goal and can say that the slope is not 0, so there is correlation. R squared metric is 0.71 which shows 71% accuracy for the model.
 
 ![](challenge1code.PNG)
 
@@ -20,22 +20,20 @@ Yes this linear model does predict the mpg of MechaCar prototypes effectively. T
 
  
 ## Summary Statistics on Suspension Coils
-For the second statistical analysis we transformed the dataset to look at the total summary using the summarize() function to get statistical measurements of the total as well as by Lot. 
-
-First using the summarize function we took the dataframe and the column for PSI to get statistical measures for dataframe including mean, median, variance, and standard deviation. My data came out a bit differently from the example but the class consensus was that the numbers were correct.  Here we can see the mean of the dataframe is 1499 and the variance is 62. 
+For the second statistical analysis we transformed the dataset to look at the total summary using the summarize() function to get statistical measurements of the total as well as by Lot. First using the summarize function we took the dataframe and the column for PSI to get statistical measures for dataframe including mean, median, variance, and standard deviation. My data came out a bit differently from the example but the class consensus was that these numbers below were correct.  Here we can see the mean of the dataframe is 1499 and the variance is 62. 
 
 ![](total_summary.PNG)
 
-Next we wrote an RScript using group_by and summarize() to group each manufacturing lot by mean, median, variance, and standard deviation. Here we can the statistical measures by lot. 
+Next we wrote an RScript using group_by and summarize() to group each manufacturing lot by mean, median, variance, and standard deviation. Here we can the statistical measures by each lot. 
 
 ![](lot_summary.PNG)
 
-The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+**The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
 
-The total meeets the design specifications. The total variance is 62 where as we can not exceed 100.  Lots 1 and 2 also both meet this requirement with 0.92 and 7.46 variances which are both below 100. The 3rd lot does not meet design specifications since its variance is 170 which is over 100.
+The total meeets the design specifications since the total variance is 62 and the limit is 100.  Lots 1 and 2 also both meet this requirement with 0.92 and 7.46 variances which are both below 100. The 3rd lot does not meet design specifications since its variance is 170 which is over 100.
 
 ## Deliverable 3
-For our third statistical analysis we perofrmed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1500 pounds per square inch. First we wrote used the t.test() function to find out if PSI across all 3 manufacturing lots are statistically different from the population mean of 1500. Here we took a sample of the data to compare. Comparing the mean of the sample data to the mean of the population data we see that the p-value = 0.7007. This is higher than our p value of 0.05 and means that we can't reject the hypothesis that there is no statistical difference and therfore the sample and data are statistically similar. 
+For our third statistical analysis we performed t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1500 pounds per square inch. First we used the t.test() function to find out if PSI across all 3 manufacturing lots are statistically different from the population mean of 1500. Here we took a sample of the data to compare. Comparing the mean of the sample data to the mean of the population data we see that the p-value = 0.7007. This is higher than our p value of 0.05.  This means that we can't reject the hypothesis that there is no statistical difference and therfore the sample and population data are statistically similar. 
 
 ![](ttest.PNG)
 
@@ -47,25 +45,25 @@ Then we did the same analysis but with Lot 2. Here the p value was 0.0005911 whi
 
 ![](ttestlot2.PNG)
 
-Lastly, we performed the analysis on Lot 3. Here the p value was 0.1589. This is larger than our p-value set at 0.05. This means we can not reject our null hypothesis that it is no statistical difference. Lot 3 and the population data are statistically similar. 
+Lastly, we performed the analysis on Lot 3. Here the p value was 0.1589. This is larger than our p-value set at 0.05. This means we can not reject our null hypothesis that there is no statistical difference. Lot 3 and the population data are statistically similar. 
 
 ![](ttestlot3.PNG)
 
 
 ## Study Design: MechaCar vs Competition
 
-In this statistical study I would compare costs by model for Mecha vs their competitors to see how competitive they are in their pricing. 
+In this statistical study I would compare costs by model for Mecha vs their larggest competitor to compare how competitive their pricing is to their competitor. 
 
-What metric or metrics are you going to test?
+**What metric or metrics are you going to test?**
 I'd test the mean cost grouped by model.
 
-What is the null hypothesis or alternative hypothesis?
+**What is the null hypothesis or alternative hypothesis?**
 The null hypothesis is that the cost per model is not higher than competitors. The alternative hypothesis is that the cost per model is higher than competitors.
 
-What statistical test would you use to test the hypothesis? And why?
-I'd use a paired t test for this test so we could compare two different data sets.
+**What statistical test would you use to test the hypothesis? And why?**
+I'd use a paired t test for this test so we could compare two different data sets(Mecha & competitors) between each paired observation (mean cost per model). 
 
-What data is needed to run the statistical test?
+**What data is needed to run the statistical test?**
 We would need the cost and models from both MechaCar and their competitors. 
 
-Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car led to higher safety ratings. The null hypothesis would be that the slope is 0. We would need the cost and safety rating of each car. 
+Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car led to higher safety ratings. The null hypothesis would be that the slope is 0. We would need the cost and safety rating of each car.
