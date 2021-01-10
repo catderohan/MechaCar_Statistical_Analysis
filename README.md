@@ -1,7 +1,7 @@
 # MechaCar_Statistical_Analysis
 
 ## Linear Regression to Predict MPG
-For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. We used the lm() function in R to to perform a linear regression model.
+For the first statistical analysis we performed a linear regression model to predict the mpg of MechaCar prototypes using multiple variables. This statistical analysis is a multi linear regression model. We used the lm() function in R to to perform a linear regression model and then used the summary function to get the p value and R squared value.
 
 ![](challenge1code.PNG)
 
