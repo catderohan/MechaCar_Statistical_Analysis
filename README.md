@@ -56,22 +56,22 @@ Lastly, we performed the analysis on Lot 3. Here the p value was 0.1589. This is
 
 ## Study Design: MechaCar vs Competition
 
-In this statistical study I would compare car sale prices by model for Mecha vs their largest competitor to see how competitive their pricing is to their competitor. 
+In this statistical study I would compare car sale prices by model/year for Mecha vs their largest competitor to see how competitive their pricing is to their competitor. 
 
 **What metric or metrics are you going to test?**
 
-We would look at the cost price metric for each car sold at Mecha and it's competitor. Then we would calculate the mean (sale price) per car model for Mecha and for it's competitor.
+We would look at the cost price metric for each car sold at Mecha and it's competitor. Then we would calculate the mean (sale price) per car model/year for Mecha and for it's competitor.
 
 **What is the null hypothesis or alternative hypothesis?**
 
-The null hypothesis is that the cost per car model is not higher than competitors. The alternative hypothesis is that the cost per model is higher than competitors.
+The null hypothesis is that the cost per car model/year is not higher than competitors. The alternative hypothesis is that the cost per model is higher than competitors.
 
 **What statistical test would you use to test the hypothesis? And why?**
 
-I'd use a paired t test for this test so we could compare two different data sets(Mecha & competitor) between each paired observation (mean cost per model). 
+I'd use a paired t test for this test so we could compare two different data sets(Mecha & competitor) between each paired observation (mean cost per model/year). 
 
 **What data is needed to run the statistical test?**
 
-We would need the cost per car sold and model type from both MechaCar and their competitor. 
+We would need the car sales data (cost, model, year) from both MechaCar and their competitor. 
 
-Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car means a higher safety rating. The null hypothesis would be that the slope is 0. We would need the cost and safety rating of each car.
+Another analysis I would perform would be to look at correlation between safety and costs. I'd use the linear regression model to see if a more expensive car means a higher safety rating. We would use safety rating and cost per car for our metrics. The null hypothesis would be that the slope is 0 and there is no correlation. We would the cost and safety rating of each car for data.
